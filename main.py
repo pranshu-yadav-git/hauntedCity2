@@ -636,7 +636,7 @@ class Pill(Entity):
 
 # spawn_pills_around_hospital()
 
-def spawn_random_pills(count=50, area_size=300):
+def spawn_random_pills(count=10, area_size=200):
     for _ in range(count):
         x = uniform(-area_size, area_size)
         z = uniform(-area_size, area_size)
@@ -829,9 +829,9 @@ def update():
                 # 🌿 Ensure the hit object is actually the grass ground
 
                 if ground_hit.entity != ground:
-                
+
                     print("Can only plant on grass.")
-    
+
                     continue
 
 
